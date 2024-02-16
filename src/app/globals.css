@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.poppins {
+  font-family: var(--font-poppins);
+}
+body {
+  background-color: #f4f8fb;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: var(--font-poppins);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #f4f8fb;
+    overflow-x: hidden;
+    margin: 0;
+  }
+}

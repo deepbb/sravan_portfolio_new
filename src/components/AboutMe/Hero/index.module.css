@@ -1,0 +1,51 @@
+.hero {
+  background-image: url("/about-me-page/hero.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: right bottom;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.hero > p {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.hero > .abtMe {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.hero > .welcome {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 0.8rem;
+  color: #ff6900;
+}
+
+.hero > .greeting {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.hero > .names {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+.hero > .info {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  max-width: 50%;
+  text-align: center;
+}
+
+/* ff6900 */

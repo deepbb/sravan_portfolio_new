@@ -1,0 +1,144 @@
+.navbar-wrapper {
+  padding: 5 15;
+}
+.navbar {
+  background-color: #ff6900;
+  width: 80%;
+  margin: auto;
+  /* height: 80px; */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0; /* Start with opacity set to 0 */
+  animation: fadeInUp 4s forwards;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0px;
+  /* left: 9.5%; */
+  z-index: 999;
+  opacity: 1;
+}
+/* @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /
+  }
+  to {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+} */
+.menu-items {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.list-items {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #ffffff;
+  transition: background-color 0.5s;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+.list-items-first,
+.active {
+  margin-left: 15px;
+  font-size: 16px;
+  color: #ffffff;
+  transition: background-color 2s;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #000000;
+}
+.list-items:hover {
+  background-color: #000000; /* Change this to the desired background color on hover */
+  /* border-radius: 10px; */
+  display: flex;
+  padding: 8px 20px;
+
+  align-items: center;
+  cursor: pointer;
+}
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 15px;
+}
+.logo-hamburger-container {
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.hamburger {
+  /* transition: background-color 0.2s ease-in-out; */
+  /* position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%); */
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-container {
+    margin-left: 10px;
+  }
+  .hamburger {
+    display: flex;
+    background-color: white;
+    margin-right: 10px;
+    max-height: 48px;
+    margin-block: auto;
+    border-radius: 50%;
+  }
+  .navbar-wrapper {
+    padding: 0;
+  }
+  .navbar-expanded {
+    background-color: #ff6900;
+    width: 80%;
+    margin: auto;
+    /* height: 350px; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 999;
+  }
+  .navbar-wrapper {
+    width: 100%;
+    z-index: 7;
+    flex-direction: column;
+    padding: 0;
+  }
+  .menu-items-expanded {
+    list-style: none;
+    display: block;
+    margin-block: 10px;
+  }
+  .menu-items {
+    display: none;
+  }
+  .logo-hamburger-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

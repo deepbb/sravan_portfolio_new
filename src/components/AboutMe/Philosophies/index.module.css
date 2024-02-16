@@ -1,0 +1,39 @@
+.innerContainer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 50px;
+  padding-bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+.innerContainer .info {
+  flex: 1;
+}
+.innerContainer .info .head {
+  font-size: 30px;
+  font-weight: 500;
+  color: #f48020;
+}
+.innerContainer .info .text {
+  max-width: 80%;
+  font-weight: 400;
+}
+.innerContainer .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 425px) {
+  .innerContainer {
+    padding: 20px;
+  }
+  .innerContainer .info .text {
+    max-width: 100%;
+  }
+}

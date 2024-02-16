@@ -1,0 +1,19 @@
+.footer-disclaimer {
+  color: #fff;
+  /* padding-top: 20px; */
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-block: 8px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-wrapper {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}

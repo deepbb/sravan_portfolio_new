@@ -1,0 +1,72 @@
+.container {
+  background-image: url("/about-me-page/lets-connect.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 50px;
+}
+
+.contentContainer {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  color: white;
+  flex-direction: column;
+}
+.contentContainer > h2 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.contentContainer > p {
+  max-width: 50%;
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0.6rem;
+  }
+
+  .contentContainer > h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .contentContainer > p {
+    max-width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .contentContainer > h2 {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .contentContainer > p {
+    max-width: 60%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    height: 400px;
+  }
+}
